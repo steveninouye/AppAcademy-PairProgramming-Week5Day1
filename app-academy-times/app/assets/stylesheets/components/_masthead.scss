@@ -4,6 +4,7 @@
 	align-items: center;
 	border-bottom: 2px solid black;
 	position: relative;
+  align-items: center;
 }
 
 .language-nav {
@@ -15,7 +16,13 @@
 	border-bottom: none;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
+  display: flex;
+  justify-content: center;
+  padding-inline-start: 0;
+  margin-top: -3px;
+  padding-bottom: 4px;
 }
+
 
 .language-nav a {
 	margin: 0 5px;
@@ -23,10 +30,40 @@
 	font-family: $sans-serif;
 	font-size: 10px;
 	color: $dark-gray;
+  text-decoration: none;
+}
+
+.language-nav a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.language-nav li:first-child {
+  font-weight: bold;
 }
 
 .language-nav ul {
 	display: flex;
+}
+
+.bottom-nav ul {
+  display: flex;
+}
+
+.bottom-nav ul li {
+  padding: 8px 12px;
+}
+
+.bottom-nav ul li:not(:last-child) {
+  border-right: 1px solid $light-gray
+}
+
+.bottom-nav ul li a {
+  margin: 0 5px;
+	text-transform: uppercase;
+	font-family: $sans-serif;
+	font-size: 10px;
+	color: black;
 }
 
 .logo {
@@ -44,7 +81,7 @@
 
 .masthead-links li {
 	margin-left: 10px;
-	border-right: 1px solid $light-gray;
+
 }
 
 .masthead-links button {
@@ -60,7 +97,7 @@
 }
 
 .masthead-links a,
-.masthead-links button, 
+.masthead-links button,
 .masthead-links time {
 	margin-right: 10px;
 }
@@ -71,4 +108,9 @@
 
 .masthead-links strong {
 	color: green;
+}
+
+.app-times-div {
+  width: 550px;
+  padding: 10px 0 0 0; // top right bottom left
 }

@@ -6,25 +6,28 @@ html {
 }
 
 body {
-	// ...
+	width: 80%;
+  margin: 0 auto;
+  font-family: $serif;
+  font-size: 12px;
 }
 
 button {
-	// background-color:
+	background-color: #8585fa;
 	// border-color:
-	// color:
-	// font-weight:
-	// padding:
-	// border-radius:
+	color: white;
+	font-weight: bold;
+	padding: 6px 8px;
+	border-radius: 5px;
 	// transition:
 	// font-family:
 	// text-transform:
-	// font-size:
+	font-size: .8rem;
 	// text-align:
 }
 
 button:hover {
-	// background-color:
+	background-color: #4e4eff;
 	// border-color:
 }
 
@@ -46,4 +49,8 @@ hr {
 .hr-top {
 	height: 2px;
 	margin-bottom: 1px;
+}
+
+a {
+  
 }
